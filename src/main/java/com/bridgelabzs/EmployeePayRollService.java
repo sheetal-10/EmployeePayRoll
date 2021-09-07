@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class EmployeePayRollService {
 	private List<EmployeeData> employeePayrollList = new ArrayList<EmployeeData>();
     Scanner scanner = new Scanner(System.in);
+    
    //Creating readEmployeeDataFromConsole method
     public void readEmployeeDataFromConsole()
     {
@@ -23,6 +24,7 @@ public class EmployeePayRollService {
         int salary = scanner.nextInt();
         employeePayrollList.add(new EmployeeData(id, Name, salary));
     }
+    
     //Creating writeEmployeeDataInConsole method
     public void writeEmployeeDataInConsole()
     {
